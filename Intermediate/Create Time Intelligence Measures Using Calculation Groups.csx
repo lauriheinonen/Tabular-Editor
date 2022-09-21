@@ -89,6 +89,34 @@ foreach(var m in Selected.Measures) {
     m.DisplayFolder                                        // Display Folder
     );
     
+    // YTDOYTD
+    m.Table.AddMeasure(
+    m.Name + " YTDOYTD",                                       // Name
+    "Calculate(" + m.DaxObjectName + ", 'Time Intelligence'[Time Calculation]=\"YTDOYTD\")",    
+    m.DisplayFolder                                        // Display Folder
+    );
+        
+    // YTDOYTD%
+    m.Table.AddMeasure(
+    m.Name + " YTDOYTD%",                                       // Name
+    "Calculate(" + m.DaxObjectName + ", 'Time Intelligence'[Time Calculation]=\"YTDOYTD%\")",    
+    m.DisplayFolder                                        // Display Folder
+    );
+       
+    // MTDOMTD
+    m.Table.AddMeasure(
+    m.Name + " MTDOMTD",                                       // Name
+    "Calculate(" + m.DaxObjectName + ", 'Time Intelligence'[Time Calculation]=\"MTDOMTD\")",    
+    m.DisplayFolder                                        // Display Folder
+    );
+        
+    // MTDOMTD%
+    m.Table.AddMeasure(
+    m.Name + " MTDOMTD%",                                       // Name
+    "Calculate(" + m.DaxObjectName + ", 'Time Intelligence'[Time Calculation]=\"MTDOMTD%\")",    
+    m.DisplayFolder                                        // Display Folder
+    );
+   
     // YOY
     m.Table.AddMeasure(
     m.Name + " YOY",                                       // Name
